@@ -1,0 +1,23 @@
+body {
+    background-color: dodgerblue;
+    color: white;
+    font-family: "Arial";
+}
+
+main {
+    background-color: white;
+    color: navy;
+}
+
+/* media query for larger screen sizes, larger than 480px */
+@media screen and (min-width: 480px) {
+    body {
+        background-color: lightskyblue;
+        color: navy;
+        font-family: "Georgia";
+    }
+    header {
+        background-color: dodgerblue;
+        color: snow;
+    }
+}
