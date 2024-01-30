@@ -1,3 +1,4 @@
+/* css styles for small screens & default values */
 body {
     background-color: dodgerblue;
     color: white;
@@ -9,7 +10,18 @@ main {
     color: navy;
 }
 
-/* media query for larger screen sizes, larger than 480px */
+header {
+    background-image: url(../images/LogoSmall.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    min-height: 50px;
+}
+
+dt {
+    font-weight: bold;
+}
+
+/* media query for larger screen sizes, responsive and activates on screens larger than 480px */
 @media screen and (min-width: 480px) {
     body {
         background-color: lightskyblue;
@@ -19,5 +31,9 @@ main {
     header {
         background-color: dodgerblue;
         color: snow;
+
+        /* image declarations */
+        background-image: url(../images/LogoLarge.png);
+        min-height: 100px;
     }
 }
