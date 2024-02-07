@@ -91,17 +91,17 @@ nav a:link {
     color: white;
 }
 
-nav a:link:visited {
+nav a:visited {
     color: black;
 }
 
 /* rule for first two links */
-.color-link:link {
+nav a.color-link {
     color: rgb(226, 162, 66);
 }
 
 /* hover must come after link and visted psuedo classes */
-nav a:link:hover {
+nav a:hover {
     color: yellow;
 }
 
