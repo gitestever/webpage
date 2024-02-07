@@ -19,9 +19,10 @@ header {
     Hex color values and RGB color values
     #1A6F51 rgb(26, 111, 81)
     #C7DCA7 rgb(199, 220, 167)
-    link font color & paragraph text colors rgb(226, 162, 66)
+    link font color & text colors rgb(226, 162, 66)
 
     I choose these colors because they have good contrast ratios higher than 4.5.
+    I started with green because it represent outdoors and the season of spring, a great time to walk dogs and have dog activites.
     The website used was coolors.co and colorhunt.co
     */
     background-color: #C7DCA7;
