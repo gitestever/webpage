@@ -96,7 +96,7 @@ nav a:visited {
 }
 
 /* rule for first two links */
-nav a.color-link {
+.color-link {
     color: rgb(226, 162, 66);
 }
 
