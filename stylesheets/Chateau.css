@@ -87,7 +87,7 @@ nav {
 }
 
 /* main selector and descendant selector:psuedoclass */
-nav a:link {
+nav a {
     color: white;
 }
 
