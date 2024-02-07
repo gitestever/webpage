@@ -1,6 +1,6 @@
 /* css styles for small screens & default values */
 body {
-    background-color: dodgerblue;
+    background-color: #1A6F51;
     color: white;
     font-family: "Arial";
 }
@@ -15,6 +15,20 @@ header {
     background-position: right top;
     background-repeat: no-repeat;
     min-height: 50px;
+    /* 
+    Hex color values and RGB color values
+    #1A6F51 rgb(26, 111, 81)
+    #C7DCA7 rgb(199, 220, 167)
+    link font color & paragraph text colors rgb(226, 162, 66)
+
+    I choose these colors because they have good contrast ratios higher than 4.5.
+    The website used was coolors.co and colorhunt.co
+    */
+    background-color: #C7DCA7;
+}
+
+.index-main-color {
+    color: rgb(226, 162, 66)
 }
 
 dt {
@@ -27,19 +41,85 @@ img {
     height: auto;
 }
 
+/* class and id styling for semantic elements */
+.class-unordered-list {
+    background-color: burlywood;
+}
+
+.trainer {
+    width: 80px;
+}
+
+.trainer-image {
+    border-radius: 100%;
+}
+
+.trainer-caption {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* for h1 Chateau Chien tag */
+#banner {
+    font-family: "Brush Script MT", cursive;
+    font-size: 4em;
+}
+
+.class-list {
+    background-color: blanchedalmond;
+}
+
+.trainers-section {
+    background-color: peachpuff;
+    border-radius: 10px;
+}
+
+.largeritalics {
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+/* bigger links */
+
+nav {
+    font-size: 1.5em;
+}
+
+/* main selector and descendant selector:psuedoclass */
+nav a:link {
+    color: white;
+}
+
+nav a:visited {
+    color: black;
+}
+
+/* rule for first two links */
+.color-link:link {
+    color: rgb(226, 162, 66);
+}
+
+/* hover must come after link and visted psuedo classes */
+nav a:link:hover {
+    color: yellow;
+}
+
 /* media query for larger screen sizes, responsive and activates on screens larger than 480px */
 @media screen and (min-width: 480px) {
     body {
-        background-color: lightskyblue;
+        background-color: #C7DCA7;
         color: navy;
         font-family: "Georgia";
     }
     header {
-        background-color: dodgerblue;
+        background-color: #1A6F51;
         color: snow;
 
         /* Logo Image declaration */
         background-image: url(../images/LogoLarge.png);
         min-height: 100px;
+    }
+    .trainer {
+        width: 150px;
     }
 }
