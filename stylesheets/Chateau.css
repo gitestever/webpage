@@ -86,6 +86,11 @@ nav {
     font-size: 1.5em;
 }
 
+/* rule for first two links */
+.color-link {
+    color: rgb(226, 162, 66);
+}
+
 /* main selector and descendant selector:psuedoclass */
 nav a {
     color: white;
@@ -93,11 +98,6 @@ nav a {
 
 nav a:visited {
     color: black;
-}
-
-/* rule for first two links */
-.color-link {
-    color: rgb(226, 162, 66);
 }
 
 /* hover must come after link and visted psuedo classes */
