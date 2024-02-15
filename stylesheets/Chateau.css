@@ -43,8 +43,16 @@ img {
 }
 
 /* class and id styling for semantic elements */
-.class-unordered-list {
+.class-information-list {
     background-color: burlywood;
+    padding: 10px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #1A6F51;
+}
+
+.class-information-list h2 {
+    text-align: center;
 }
 
 .trainer {
@@ -66,8 +74,12 @@ img {
     font-size: 4em;
 }
 
-.class-list {
+.class-description-list {
     background-color: blanchedalmond;
+}
+
+.class-description-list h2 {
+    text-align: center;
 }
 
 .trainers-section {
@@ -105,6 +117,22 @@ nav a:hover {
     color: yellow;
 }
 
+/* navigation style for smaller screens */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    /* removes vertical breaks */
+    display: inline;
+    margin: 5px;
+    background-color: #C7DCA7;
+    width: 120px;
+    text-align: center;
+}
+
 /* media query for larger screen sizes, responsive and activates on screens larger than 480px */
 @media screen and (min-width: 480px) {
     body {
@@ -112,6 +140,7 @@ nav a:hover {
         color: navy;
         font-family: "Georgia";
     }
+
     header {
         background-color: #1A6F51;
         color: snow;
@@ -120,7 +149,51 @@ nav a:hover {
         background-image: url(../images/LogoLarge.png);
         min-height: 100px;
     }
+
     .trainer {
         width: 150px;
+    }
+
+    /* navigation styling for large screens */
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* CSS for vertical navigation */
+    nav li {
+        display: block;
+        margin: 3rem;
+        background-color: #1A6F51;
+        width: 120px;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    /* float columns */
+    .class-unordered-list {
+        background-color: burlywood;
+        padding: 20px;
+    }
+
+    .column-left {
+        float: left;
+        width: 30%;
+    }
+
+    .column-right {
+        float: left;
+        width: 50%;
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .classes-footer {
+        text-align: center;
     }
 }
