@@ -220,12 +220,12 @@ nav a {
     .nav-container {
         display: flex;
         flex-direction: column;
+        /* set nav container height to 100% of viewport */
+        height: 100vh;
     }
 
     .nav-main-container {
         display: flex;
         flex-direction: row;
-        /* set container height to 100% of viewport */
-        height: 100vh;
     }
 }
