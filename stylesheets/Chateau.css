@@ -133,6 +133,7 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: auto;
 }
 
 .sponsor-container {
