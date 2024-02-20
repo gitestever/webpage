@@ -14,50 +14,81 @@
         <h1 id="banner">Chateau Chien</h1>
     </header>
 
-    <nav>
+    <nav class="nav-container">
         <!--navigation section-->
-        <ul>
-            <li><a href="./index.html" class="color-link">Home</a></li>
-            <li><a href="./classes.html" class="color-link">Classes</a></li>
-            <li><a href="./our-team.html">Our Team</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
+        <a href="./index.html" class="color-link">Home</a>
+        <a href="./classes.html" class="color-link">Classes</a>
+        <a href="./our-team.html">Our Team</a>
+        <a href="./contact.html">Contact</a>
     </nav>
 
     <main>
         <!--begin main content-->
-        <h1>This is the our team page</h1>
 
         <!-- image sponser -->
-        <a href="https://www.nycacc.org/"><img src="./images/sponsor.jpg" alt="sponsors" width="200"></a>
-
-        <!-- section of main for ol -->
-        <section>
-            <!-- non-semantic is better because div can group different semantic elements for styling -->
-            <div class="trainers-section">
-                <figure class="trainer">
-                    <img class="trainer-image" src="./images/trainer3.jpeg" alt="trainer3">
-                    <figcaption class="trainer-caption">Alice</figcaption>
-                </figure>
-
-                <figure class="trainer">
-                    <img class="trainer-image" src="./images/trainer6.jpeg" alt="trainer6">
-                    <figcaption class="trainer-caption">Betty</figcaption>
-                </figure>
-
-                <figure class="trainer">
-                    <img class="trainer-image" src="./images/trainer7.jpeg" alt="trainer7">
-                    <figcaption class="trainer-caption">Camila</figcaption>
-                </figure>
-
-                <h2>Our Trainers are</h2>
-                <ol>
-                    <li>Experienced</li>
-                    <li>Helpful</li>
-                    <li>Available for private lessons</li>
-                </ol>
+        <div class="trainers-container">
+            <div class="sponsor-container">
+                <ul class="sponsor-list">
+                    <div class="trainers-container">
+                        <li><a href="https://www.nycacc.org/"><img src="./images/sponsor.jpg" alt="sponsors"
+                                    width="200"></a></li>
+                        <li><a href="https://www.nycacc.org/"><img src="./images/sponsor.jpg" alt="sponsors"
+                                    width="200"></a></li>
+                        <li><a href="https://www.nycacc.org/"><img src="./images/sponsor.jpg" alt="sponsors"
+                                    width="200"></a></li>
+                    </div>
+                </ul>
             </div>
-        </section>
+
+            <!-- section of main for ol -->
+            <section>
+                <!-- non-semantic is better because div can group different semantic elements for styling -->
+                <div class="trainers-section">
+                    <div class="trainers-container">
+                        <figure class="trainer">
+                            <img class="trainer-image" src="./images/trainer3.jpeg" alt="trainer3">
+                            <figcaption class="trainer-caption">Alice</figcaption>
+                        </figure>
+
+                        <figure class="trainer">
+                            <img class="trainer-image" src="./images/trainer6.jpeg" alt="trainer6">
+                            <figcaption class="trainer-caption">Betty</figcaption>
+                        </figure>
+
+                        <figure class="trainer">
+                            <img class="trainer-image" src="./images/trainer7.jpeg" alt="trainer7">
+                            <figcaption class="trainer-caption">Camila</figcaption>
+                        </figure>
+
+                        <figure class="trainer">
+                            <img class="trainer-image" src="./images/trainer3.jpeg" alt="trainer3">
+                            <figcaption class="trainer-caption">Alice</figcaption>
+                        </figure>
+
+                        <figure class="trainer">
+                            <img class="trainer-image" src="./images/trainer3.jpeg" alt="trainer3">
+                            <figcaption class="trainer-caption">Alice</figcaption>
+                        </figure>
+
+                        <figure class="trainer">
+                            <img class="trainer-image" src="./images/trainer3.jpeg" alt="trainer3">
+                            <figcaption class="trainer-caption">Alice</figcaption>
+                        </figure>
+
+                        <figure class="trainer">
+                            <img class="trainer-image" src="./images/trainer3.jpeg" alt="trainer3">
+                            <figcaption class="trainer-caption">Alice</figcaption>
+                        </figure>
+                    </div>
+
+                    <h2>Our Trainers are</h2>
+                    <ol>
+                        <li>Experienced</li>
+                        <li>Helpful</li>
+                        <li>Available for private lessons</li>
+                    </ol>
+                </div>
+            </section>
     </main>
 
     <footer>
