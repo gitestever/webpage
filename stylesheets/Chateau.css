@@ -198,7 +198,7 @@ nav a {
     /* CSS for vertical navigation */
     nav a {
         display: block;
-        margin: 3rem;
+        margin: 1rem;
         background-color: #1A6F51;
         width: 120px;
         font-size: 1.5rem;
