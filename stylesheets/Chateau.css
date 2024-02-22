@@ -12,6 +12,8 @@ main {
     height: 100vh;
     /* if content flows larger than 100vh, clip content and add a scroll bar */
     overflow: scroll;
+    /* fill the rest of parent flexbox remaining space */
+    width: 100%;
 }
 
 header {
@@ -59,6 +61,7 @@ img {
     text-align: center;
 }
 
+/* trainer image size for small screen */
 .trainer {
     width: 80px;
 }
@@ -80,6 +83,7 @@ img {
 
 .class-description-list {
     background-color: blanchedalmond;
+    padding: 15px;
 }
 
 .class-description-list h2 {
@@ -97,7 +101,6 @@ img {
 }
 
 /* bigger links */
-
 nav {
     font-size: 1.5em;
 }
@@ -128,34 +131,38 @@ nav a {
     text-align: center;
 }
 
-/* team page trainer image flexbox */
-.trainers-container {
+/* gallery of images flexbox */
+.gallery-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
+    justify-content: space-evenly;
 }
 
+/* sponsor flexbox */
 .sponsor-container {
     text-align: center;
 }
 
+/* center sponsor list */
 .sponsor-list {
     display: inline-block;
     text-align: left;
     list-style-type: none;
 }
 
+/* sponsor images */
 .sponsor-list li {
     width: 100px;
 }
 
-.nav-container {
+/* navigation flexbox for small screens */
+.navcontainer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
+/* parent container for nav and main tag, vertical flow */
 .nav-main-container {
     display: flex;
     flex-direction: column;
@@ -178,6 +185,7 @@ nav a {
         min-height: 100px;
     }
 
+    /* trainer image size for large screen */
     .trainer {
         width: 150px;
     }
@@ -214,17 +222,19 @@ nav a {
         clear: both;
     }
 
-    .classes-footer {
+    .footer-center {
         text-align: center;
     }
 
-    .nav-container {
+    /* flexbox rules for large screens */
+    .navcontainer {
         display: flex;
         flex-direction: column;
         /* set nav container height to 100% of viewport */
         height: 100vh;
     }
 
+    /* parent container for nav and main tag, horizontal flow */
     .nav-main-container {
         display: flex;
         flex-direction: row;
