@@ -64,6 +64,7 @@ img {
 /* trainer image size for small screen */
 .trainer {
     width: 80px;
+    height: 80px;
 }
 
 .trainer-image {
@@ -93,6 +94,7 @@ img {
 .trainers-section {
     background-color: peachpuff;
     border-radius: 10px;
+    padding: 10px;
 }
 
 .largeritalics {
@@ -103,6 +105,8 @@ img {
 /* bigger links */
 nav {
     font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* rule for first two links */
@@ -187,6 +191,7 @@ nav a {
 
     /* trainer image size for large screen */
     .trainer {
+        height: 150px;
         width: 150px;
     }
 
