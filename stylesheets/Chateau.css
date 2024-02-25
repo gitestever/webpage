@@ -253,6 +253,7 @@ nav a {
         flex-direction: row;
     }
 
+    /* Class page flexbox containers */
     .information-description-container {
         display: flex;
         flex-direction: row;
