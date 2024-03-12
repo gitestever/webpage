@@ -84,7 +84,7 @@
 	
 #nav-custom {
 	/* typing # opens up a color picker */
-	background-color: #1A6F51;
+	background-color: lightcyan;
 }
 
 #custom-header {
@@ -95,7 +95,7 @@
 }
 	
 #nav-title {
-	color: white;
+	color: #1A6F51;
 }
 
 }
