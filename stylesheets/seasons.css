@@ -1,5 +1,3 @@
-@charset "utf-8";
-
 /* clicking on a element in live view shows the list of css rules attached to it, and clicking on "go to code" goes to the css file, very useful navigation */
 #custom-header {
 	background-image: url(../images/LogoSmall.png);
