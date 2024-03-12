@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+/* clicking on a element in live view shows the list of css rules attached to it, and clicking on "go to code" goes to the css file, very useful navigation */
+#custom-header {
+	background-image: url(../images/LogoSmall.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    min-height: 50px;
+	background-color: #C7DCA7
+}
+
+#banner {
+    font-family: "Brush Script MT", cursive;
+	font-size: 4em;
+	color: white;
+}
+
+/* dreamweaver emphasizes the use of ID to build on top of bootstrap, these id selectors are created with the + sign in splitview and then typing #id */
+#nav-custom {
+	/* typing # opens up a color picker */
+	background-color: #C7DCA7;
+}
+
+#body-custom {
+	/* typing color gives hints like background-color, border-color  */
+	background-color: #1A6F51;
+}
+
+/* in dreamweaver classes are highlighted green, and id selectors are highlighted blue. The color of the syntax makes it easier to spot classes or ids */
+#season-header {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	color: white;
+}
+
+#spring {
+	background-color: lavenderblush;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#summer {
+	background-color: gold;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#fall {
+	background-color: orange;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#winter {
+	background-color: paleturquoise;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#footer-custom {
+	background-color: lightcyan;
+}
+
+#nav-title {
+	color: #1A6F51;
+	font-style: italic;
+	font-weight: bold;
+}
+
+@media screen and (min-width:480px){
+
+/* very minimum css when bootstrap and dreamweaver works together to create most of the responsiveness */
+#banner {
+    font-family: "Brush Script MT", cursive;
+}
+	
+#season-header {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	color: black;
+}
+	
+#body-custom {
+	background-color: #C7DCA7;
+}
+	
+#nav-custom {
+	/* typing # opens up a color picker */
+	background-color: #1A6F51;
+}
+
+#custom-header {
+	background-color: #1A6F51;
+	color: snow;
+	background-image: url(../images/LogoLarge.png);
+	min-height: 100px;
+}
+	
+#nav-title {
+	color: white;
+}
+
+}

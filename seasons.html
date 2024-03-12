@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>All Seasons</title>
+	<link href="/stylesheets/seasons.css" rel="stylesheet" type="text/css">
+	<link href="/stylesheets/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="body-custom">
+	<!-- 
+		1. dreamweaver made it easier to change text directly in split view instead of in the html file.
+		2. Adding an id with the split view prompts a guided process that automatically creates the id selector and media queries in the css file.
+		3. About everything can be created and edited right on splitview and it is very responsive with feedback. If the specifics need to defined, right clicking and selecting code navigator or go to code takes me right to the selector to edit the css, no more scrolling or going back and forth between files!
+	-->
+	<header id="custom-header">
+		<!-- dreamweaver shows an outline of h1's tag block which is very useful in visualizing the block size of a tag -->
+		<!-- the outline is interactive and when moved, bootstrap class names automatically take care of the change, amazing -->
+		<h1 class="text-lg-left offset-xl-2 col-xl-3 col-8" id="banner">Chateau Chien</h1>
+	</header>
+
+	<!--
+		must do in dreamweaver is to create a container-fluid class and then a following container class to make the entire page responsive.
+		Bootstrap manual says that container-fluid, then container, then row is how to make a reponsive grid system.
+	-->
+	<div class="container-fluid">
+		<div class="container">
+			<nav class="navbar navbar-expand-md navbar-light" id="nav-custom"> <a class="navbar-brand" id="nav-title"
+					href="#">Chateau Chien</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false"
+					aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span></button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent1">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item"> <a class="nav-link bg-white" href="./index.html">Home</a></li>
+						<li class="nav-item"> <a class="nav-link bg-white" href="/classes.html">Classes</a></li>
+						<li class="nav-item"> <a class="nav-link bg-white" href="/our-team.html">Our Team</a></li>
+						<li class="nav-item"> <a class="nav-link  bg-white" href="/contact.html">Contact</a></li>
+						<li class="nav-item"> <a class="nav-link bg-white" href="/OurGraduates.html">Our Graduates</a>
+						</li>
+						<!-- if any error shows up it'll show that the line number is red, that way html validation is part of the work flow" -->
+						<!-- active bootstrap class shows that this link is active -->
+						<li class="nav-itema active"> <a class="nav-link link-primary bg-white"
+								href="/OurSeasons.html">All Seasons<span class="sr-only">(current)</span></a></li>
+						<!-- 
+							Bootstrap navigation menu, removed the li & search bar that wasn't used and kept the ones above.
+							Also responsive with small screens and large screens. No rules defined in CSS, bootstrap automatically handles reponsiveness.
+						-->
+					</ul>
+				</div>
+			</nav>
+			<h1 class="text-center" id="season-header">All Season Experience!&nbsp;</h1>
+			<!-- this class row was one of the bootstrap components offered in dreamweaver, it is the grid row with column component" -->
+			<div class="row">
+				<!-- 
+					bootstrap classes that automatically makes gridview responsive at different breakpoints
+					There are three classes for 3 breakpoints of small screens, medium screens, and large screens. This required some google searching and reading Bootstrap manual to understand and implement.
+					Large screens shows 4 columns, medium screen shows 2 columns, and small screen shows 1 column. Bootstrap also makes sure that the aspect ratio is kept when resizing.
+				-->
+				<div class="col-xl-2 col-md-4 col-sm-12" id="spring">
+					<!-- img was actually added in split view so the path had to be changed from how Dreamweaver does it. The classes like img-fluid and rounded were selectable in splitview, they were added after selecting settings like "make image responsive. This is very useful instead of defining it in the css file"-->
+					<img src="./images/seasons/spring.jpg" alt="Placeholder image" width="1000" height="221"
+						class="img-fluid rounded">
+					<h5 class="text-center">Spring</h5>
+				</div>
+				<!-- dreamweaver shows the available id in the css file when id= is typed, less clicking between the css file and the source file to locate css rules -->
+				<div class="col-xl-2 col-md-4 col-sm-12" id="summer"><img src="./images/seasons/summer.jpg"
+						class="img-fluid rounded" alt="Placeholder image">
+					<h5 class="text-center">Summer</h5>
+				</div>
+				<div class="col-xl-2 col-md-4 col-sm-12" id="fall"><img src="./images/seasons/fall.jpg"
+						class="img-fluid rounded" alt="Placeholder image">
+					<h5 class="text-center">Fall</h5>
+				</div>
+				<div class="col-xl-2 col-md-4 col-sm-12" id="winter"><img src="./images/seasons/winter.jpg"
+						class="img-fluid rounded" alt="Placeholder image">
+					<h5 class="text-center">Winter</h5>
+				</div>
+			</div>
+			&nbsp;
+
+
+			<footer class="text-center" id="footer-custom">
+				Some pictures by <a href="https://www.pexels.com">Pexels</a> and <a
+					href="https://www.freepik.com">FreePik</a>
+				<br>
+				Copyright © 2024 <span class="largeritalics">Chateau Chien</span>
+				<br>
+				<a href="mailto:kevin@mei.com">kevin@mei.com</a>
+			</footer>
+		</div>
+	</div>
+	
+	<!-- scripts automatically added by dreamweaver when bootstrap was used! no need to go searching for the js files -->
+	<script src="./js/jquery-3.4.1.min.js"></script>
+	<script src="./js/popper.min.js"></script>
+	<script src="./js/bootstrap-4.4.1.js"></script>
+</body>
+
+</html>
