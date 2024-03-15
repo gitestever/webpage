@@ -384,8 +384,18 @@ nav a {
         grid-template-rows: repeat(6, auto);
     }
 
-    .grid-item-container {
+    .item-grid-container {
         display: grid;
+        width: 100%;
         grid-template-columns: repeat(2, auto);
+    }
+
+    .form-label {
+        grid-area: 0 / 1 / 0 / 1;
+    }
+
+    .form-input {
+        grid-area: 0 / 2 / 0 / 2;
+        margin-right: auto;
     }
 }
