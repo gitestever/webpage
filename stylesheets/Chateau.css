@@ -303,6 +303,10 @@ textarea:focus {
     outline: black solid 2px;
 }
 
+.video {
+    text-align: center;
+}
+
 /* media query for larger screen sizes, responsive and activates on screens larger than 480px */
 @media screen and (min-width: 480px) {
     body {
