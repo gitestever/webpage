@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script>
 		const date = new Date();
-		document.getElementById("footer-script").innerHTML = date;
+		document.getElementById("footer-script").innerHTML = "Date: " + date;
 	</script>
 </head>
 
@@ -95,7 +95,8 @@
         </main>
     </div>
 
-    <footer class="footer-center" id="footer-script">
+    <footer class="footer-center">
+        <p id="footer-script"></p>
         Copyright © 2024 <span class="largeritalics">Chateau Chien</span>
         <br>
         <a href="mailto:kevin@mei.com">kevin@mei.com</a>
