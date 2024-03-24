@@ -264,7 +264,7 @@ nav a {
     color: black;
 }
 
-/* styling for forms */
+/* styling for text, email, tel, select, textarea, and submit */
 input[type=text],
 input[type=email],
 input[type=tel],
@@ -287,6 +287,13 @@ textarea {
     font-family: 'Arial';
 }
 
+input[type=submit] {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #1A6F51;
+    padding: 1rem;
+}
+
 /* highlight input field when clicked */
 input[type=text]:focus,
 input[type=email]:focus,
@@ -294,13 +301,6 @@ input[type=tel]:focus,
 select:focus,
 textarea:focus {
     outline: black solid 2px;
-}
-
-input[type=submit] {
-    width: 100%;
-    border-radius: 5px;
-    border: 1px solid #1A6F51;
-    padding: 1rem;
 }
 
 /* media query for larger screen sizes, responsive and activates on screens larger than 480px */

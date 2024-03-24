@@ -37,35 +37,42 @@
             <!-- Gridview Approach -->
             <form action="" method="post">
                 <div class="form-grid-container">
+                    <!-- text input -->
                     <div class="item-grid-container">
-                        <label for="Name" class="form-label">Name</label>
-                        <input type="text" id="Name" required class="form-input" />
+                        <div class="form-label"><label for="Name">Name</label></div>
+                        <div class="form-input"><input type="text" id="Name" required /></div>
                     </div>
+                    <!-- email input -->
                     <div class="item-grid-container">
-                        <label for="E-Mail" class="form-label">E-Mail</label>
-                        <input type="email" id="Email" name="email" placeholder="name@email.com" class="form-input"/>
+                        <div class="form-label"><label for="E-Mail">E-Mail</label></div>
+                        <div class="form-input"><input type="email" id="Email" name="Email"
+                                placeholder="name@email.com" /></div>
                     </div>
+                    <!-- phone input -->
                     <div class="item-grid-container">
-                        <label for="Phone" class="form-label">Phone</label>
-                        <input type="tel" id="Phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required class="form-input"/>
+                        <div class="form-label"><label for="Phone">Phone</label></div>
+                        <div class="form-input"><input type="tel" id="Phone" name="Phone"
+                                pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required /></div>
                     </div>
+                    <!-- select input -->
                     <div class="item-grid-container">
-                        <label for="Preferred contact" class="form-label">Preferred contact</label>
-                        <select id="Preferred contact" name="Preferred contact" class="form-input">
-                            <option selected>Email me</option>
-                            <option>Phone me between 1pm - 4pm</option>
-                            <option>Phone me between 6pm - 9pm</option>
-                        </select>
+                        <div class="form-label"><label for="Preferred contact">Preferred contact</label></div>
+                        <div class="form-input"><select id="Preferred contact" name="Preferred contact">
+                                <option selected>Email me</option>
+                                <option>Phone me between 1pm - 4pm</option>
+                                <option>Phone me between 6pm - 9pm</option>
+                            </select></div>
                     </div>
+                    <!-- text area -->
                     <div class="item-grid-container">
-                        <label class="form-label">Question or Concern?</label>
-                        <textarea name="message" row="30" column="30" class="form-input" placeholder="Ask a question..."></textarea>
+                        <div class="form-label"><label for="Questions">Question or Concern?</label></div>
+                        <div class="form-input"><textarea id="Questions" name="Questions" row="30" column="30"
+                                placeholder="Ask a question..."></textarea></div>
                     </div>
+                    <!-- submit  -->
                     <div class="item-grid-container">
-                        <label class="form-label">Send Now!</label>
-                        <div class="form-input">
-                            <input type="submit" />
-                        </div>
+                        <div class="form-label"><label>Send Now!</label></div>
+                        <div class="form-input"><input type="submit" /></div>
                     </div>
                 </div>
             </form>
@@ -84,9 +91,9 @@
     </footer>
 
     <script>
-		const date = new Date();
-		document.getElementById("footer-script").innerHTML = "Date: " + date;
-	</script>
+        const date = new Date();
+        document.getElementById("footer-script").innerHTML = "Date: " + date;
+    </script>
 </body>
 
 </html>
