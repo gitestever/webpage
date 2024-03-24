@@ -6,6 +6,10 @@
     <title>Our Graduates</title>
     <link rel="stylesheet" href="stylesheets/Chateau.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		const date = new Date();
+		document.getElementById("footer-script").innerHTML = date;
+	</script>
 </head>
 
 <body>
@@ -58,7 +62,7 @@
         </main>
     </div>
 
-    <footer class="footer-center">
+    <footer class="footer-center" id="footer-script">
         <!--attribution-->
         Some images by <a href="https://www.freepik.com">Freepik</a>
         <br>

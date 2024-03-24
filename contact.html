@@ -6,6 +6,10 @@
     <title>Chateau Chien</title>
     <link rel="stylesheet" href="stylesheets/Chateau.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script>
+		const date = new Date();
+		document.getElementById("footer-script").innerHTML = date;
+	</script>
 </head>
 
 <body>
@@ -39,11 +43,11 @@
                 <div class="form-grid-container">
                     <div class="item-grid-container">
                         <label for="Name" class="form-label">Name</label>
-                        <input type="text" id="Name" required class="form-input"/>
+                        <input type="text" id="Name" required class="form-input" />
                     </div>
                     <div class="item-grid-container">
                         <label for="E-Mail" class="form-label">E-Mail</label>
-                        <input type="email" id="Email" name="email" placeholder="youremail@email.com" class="form-input"/>
+                        <input type="email" id="Email" name="email" placeholder="name@email.com" class="form-input"/>
                     </div>
                     <div class="item-grid-container">
                         <label for="Phone" class="form-label">Phone</label>
@@ -53,21 +57,22 @@
                         <label for="Preferred contact" class="form-label">Preferred contact</label>
                         <select id="Preferred contact" name="Preferred contact" class="form-input">
                             <option selected>Email me</option>
-                            <option>Phone me betwee 1pm - 4pm</option>
+                            <option>Phone me between 1pm - 4pm</option>
                             <option>Phone me between 6pm - 9pm</option>
                         </select>
                     </div>
                     <div class="item-grid-container">
                         <label class="form-label">Question or Concern?</label>
-                        <textarea name="message" row="30" column="30" class="form-input"></textarea>
+                        <textarea name="message" row="30" column="30" class="form-input" placeholder="Ask a question..."></textarea>
                     </div>
                     <div class="item-grid-container">
                         <label class="form-label">Send Now!</label>
-                        <input type="submit" class="form-input"/>
+                        <div class="form-input">
+                            <input type="submit" />
+                        </div>
                     </div>
                 </div>
             </form>
-
 
             <!-- image -->
             <img src="./images/DogOnPhone.jpg" alt="DogOnPhone">
@@ -75,7 +80,7 @@
 
     </div>
 
-    <footer class="footer-center">
+    <footer class="footer-center" id="footer-script">
         Copyright © 2024 <span class="largeritalics">Chateau Chien</span>
         <br>
         <a href="mailto:kevin@mei.com">kevin@mei.com</a>
